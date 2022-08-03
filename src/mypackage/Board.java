@@ -1,6 +1,19 @@
 package mypackage;
 
-
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.FontMetrics;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import javax.swing.ImageIcon;
+import javax.swing.JPanel;
+import javax.swing.Timer;
 import javax.swing.*;
 import java.awt.event.ActionListener;
 
@@ -35,6 +48,26 @@ public class Board extends JPanel implements ActionListener {
     }
 
     private void initBoard() {
-        addKeyListener(new TAdapter)
+        addKeyListener(new TAdapter());
+        setBackground(Color.black);
+        setFocusable(true);
+
+        setPreferredSize(new Dimension(B_WIDTH,B_HEIGHT));
+        loadImages();
+        initGame();
+    }
+
+    private void loadImages(){
+
+    }
+    private void initGame() {
+
+    }
+
+    private class TAdapter extends KeyAdapter {
+        public void keyPressed(KeyEvent e) {
+            int key=e.getKeyCode();
+            if (key==KeyEvent.VK_LEFT &&)
+        }
     }
 }
