@@ -3,7 +3,6 @@ package mypackage;
 import mypackage.Board;
 
 import javax.swing.*;
-import java.awt.*;
 
 public class Snake extends JFrame {
     public Snake() {
@@ -14,15 +13,9 @@ public class Snake extends JFrame {
         setResizable(false);
         pack();
 
-        setTitle("Snake");
+        setTitle("mypackage.Snake");
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
-    public static void main(String[] args) {
-        EventQueue.invokeLater(()-> {
-            JFrame ex=new Snake();
-            ex.setVisible(true);
-        });
-    }
 }
